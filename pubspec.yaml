@@ -1,7 +1,7 @@
 name: schoolmate
 description: A simple assistant
 publish_to: 'none'
-version: 1.0.4+0
+version: 1.0.5+0
 
 environment:
   sdk: '>=3.2.0 <4.0.0'
@@ -18,6 +18,7 @@ dependencies:
   #Image
   image_fade: ^0.6.2
   image_picker: ^1.0.5
+  image_picker_for_web: ^3.0.1
 
   #Stats
   statsfl: ^2.3.0
@@ -37,13 +38,13 @@ dependencies:
   supabase_flutter: ^2.0.0
   uuid: ^4.2.1
   window_manager: ^0.3.7
+  url_launcher: ^6.2.2
 
   #Widgets
   loading_animation_widget: ^1.2.0+4
   marquee: ^2.2.3
   toastification: ^1.1.0
   scrollable_positioned_list: ^0.3.8
-  image_picker_for_web: ^3.0.1
 
 #Overrides
 dependency_overrides:
