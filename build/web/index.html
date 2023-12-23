@@ -34,22 +34,126 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "3140227708";
+    const serviceWorkerVersion = "779664750";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
+<style>
+
+  * { margin: 0; padding: 0; }
+
+  body { transition: background-color 300ms ease-in-out; overflow: hidden; }
+
+  div.spinner {
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    left: 17.5px;
+    display: block;
+    border-width: 5px;
+    border-radius: 50%;
+    position: relative;
+    border-style: solid;
+    animation: spinner 1s linear infinite;
+    transition: opacity 300ms ease-in-out;
+  }
+
+  div.loaded {
+    opacity: 0;
+    width: 30px;
+    height: 10px;
+    left: -20px;
+    display: block;
+    margin-top: -5px;
+    position: relative;
+    border-style: solid;
+    border-width: 0 0 5px 5px;
+    transform: rotateZ(-45deg);
+    transition: opacity 300ms ease-in-out;
+  }
+
+  div.spinner.ready { opacity: 0; }
+  div.loaded.ready { opacity: 1; }
+  div.button.ready { opacity: 0; transform: scale(15); }
+
+  body div.container-loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.button {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease-in-out;
+  }
+
+  @keyframes spinner {
+    0% {
+      transform: rotateZ(0deg);
+    }
+
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    body { background: #fffffbfe; }
+
+    div.spinner { border-color: #fffffbfe #fffffbfe #fffffbfe transparent; }
+
+    div.loaded { border-color: transparent transparent #fffffbfe #fffffbfe; }
+
+    div.button { background-color: #BC004B; color: #fffffbfe; }
+    div.button:hover { transform: scale(1.2); }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body { background: #201A1B; }
+
+    div.spinner { border-color: #660025 #660025 #660025 transparent; }
+
+    div.loaded { border-color: transparent transparent #660025 #660025; }
+
+    div.button { background-color: #FFB2BE; color: #660025; }
+    div.button:hover { transform: scale(1.2); }
+  }
+</style>
 <body>
+  <div class="container-loader">
+    <div class="button" id="button">
+      <div class="spinner" id="spinner"></div>
+      <div class="loaded" id="loaded"></div>
+    </div>
+  </div>
   <script>
     window.addEventListener('load', function(ev) {
+      var spinner = document.querySelector('#spinner');
+      var loaded = document.querySelector('#loaded');
+      var button = document.querySelector('#button');
+    
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
         onEntrypointLoaded: function(engineInitializer) {
+          spinner.classList.add('ready');
+          loaded.classList.add('ready');
           engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
+            button.classList.add('ready');
+            return appRunner.runApp();
+          }).then(function (app) {
+            setTimeout(() => button.remove(), 3000);
           });
         }
       });
