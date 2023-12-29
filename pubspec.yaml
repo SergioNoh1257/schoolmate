@@ -1,7 +1,7 @@
 name: schoolmate
 description: A simple assistant
 publish_to: 'none'
-version: 1.0.6+1
+version: 1.0.7+1
 
 environment:
   sdk: '>=3.2.0 <4.0.0'
@@ -45,6 +45,7 @@ dependencies:
   marquee: ^2.2.3
   toastification: ^1.1.0
   scrollable_positioned_list: ^0.3.8
+  shared_preferences: ^2.2.2
 
 #Overrides
 dependency_overrides:
@@ -60,3 +61,23 @@ flutter:
 
   assets:
     - assets/
+  
+  fonts:
+    - family: JosefinSans
+      fonts:
+        - asset: assets/fonts/JosefinSans-VariableFont_wght.ttf
+    - family: Orbitron
+      fonts:
+        - asset: assets/fonts/Orbitron-VariableFont_wght.ttf
+    - family: PTSerif
+      fonts:
+        - asset: assets/fonts/PTSerif-Regular.ttf
+    - family: ShadowsIntoLight
+      fonts:
+        - asset: assets/fonts/ShadowsIntoLight-Regular.ttf
+    - family: SingleDay
+      fonts:
+        - asset: assets/fonts/SingleDay-Regular.ttf
+    - family: SpaceGrotesk
+      fonts:
+        - asset: assets/fonts/SpaceGrotesk-VariableFont_wght.ttf
