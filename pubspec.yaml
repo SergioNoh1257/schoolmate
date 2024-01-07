@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+    
+  cupertino_icons: ^1.0.3
 
   # Files
   cross_file: ^0.3.3+8
@@ -57,6 +59,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.1
+  flutter_native_splash: ^2.3.9
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
   uses-material-design: true
@@ -83,3 +87,54 @@ flutter:
     - family: SpaceGrotesk
       fonts:
         - asset: assets/fonts/SpaceGrotesk-VariableFont_wght.ttf
+
+flutter_native_splash:
+  color: "#fdcc48"
+  color_dark: "#282828"
+
+  image: assets/schoolmate_eagle_splash_screen.png
+
+  branding: assets/loading_light.png
+  branding_dark: assets/loading_dark.png
+
+  android_12:
+    color: "#ffffff"
+    color_dark: "#282828"
+    
+    image: assets/schoolmate_eagle_splash_screen.png
+    icon_background_color: "#ffffff"
+  
+  android_gravity: center
+  web_image_mode: center
+  
+  ios: false
+
+flutter_launcher_icons:
+  image_path_android: "assets/schoolmate_eagle_splash_screen.png"
+  image_path_ios: "assets/schoolmate_eagle_splash_screen.png"
+  android: true
+  ios: false
+  image_path: "assets/schoolmate_eagle.png"
+  min_sdk_android: 19
+
+  web:
+    generate: true
+    image_path: "assets/schoolmate_eagle_splash_screen.png"
+    background_color: "#ffffff"
+    theme_color: "#ffffff"
+  
+  windows:
+    generate: true
+    image_path: "assets/schoolmate_eagle_splash_screen.png"
+    icon_size: 256
+
+  linux:
+    generate: true
+    image_path: "assets/schoolmate_eagle_splash_screen.png"
+  
+  macos:
+    generate: false
+    image_path: "assets/schoolmate_eagle_splash_screen.png"
+  
+
+  
