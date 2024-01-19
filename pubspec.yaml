@@ -1,0 +1,143 @@
+name: schoolmate
+description: A simple assistant to help you
+publish_to: 'none'
+version: 1.2.0+0
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  cupertino_icons: ^1.0.3
+
+  # Files
+  cross_file: ^0.3.3+8
+  file_picker: ^6.1.1
+  http: ^1.1.2
+
+  #Image
+  image_fade: ^0.6.2
+  image_picker: ^1.0.7
+  image_picker_for_web: ^3.0.2
+
+  #Stats
+  statsfl: ^2.3.0
+
+  #Viewers
+  media_kit: ^1.1.10+1
+  media_kit_video: ^1.2.4
+  media_kit_libs_video: ^1.0.4
+  media_kit_libs_android_video: ^1.3.6
+  media_kit_libs_linux: ^1.1.3
+  media_kit_native_event_loop: ^1.0.8
+  syncfusion_flutter_pdfviewer: ^24.1.45
+
+  #Administration
+  flutter_riverpod: ^2.4.9
+  go_router: ^13.0.1
+  supabase_flutter: ^2.2.0
+  uuid: ^4.3.2
+  window_manager: ^0.3.7
+  url_launcher: ^6.2.3
+  encrypt: ^5.0.3
+
+  #Widgets
+  loading_animation_widget: ^1.2.0+4
+  marquee: ^2.2.3
+  toastification: ^1.1.0
+  scrollable_positioned_list: ^0.3.8
+  shared_preferences: ^2.2.2
+  flutter_staggered_grid_view: ^0.7.0
+  photo_view: ^0.14.0
+  widget_zoom: ^0.0.3
+  syncfusion_flutter_pdf: ^24.1.45
+
+#Overrides
+dependency_overrides:
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_native_splash: ^2.3.9
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+  
+  fonts:
+    - family: JosefinSans
+      fonts:
+        - asset: assets/fonts/JosefinSans-VariableFont_wght.ttf
+    - family: Orbitron
+      fonts:
+        - asset: assets/fonts/Orbitron-VariableFont_wght.ttf
+    - family: PTSerif
+      fonts:
+        - asset: assets/fonts/PTSerif-Regular.ttf
+    - family: ShadowsIntoLight
+      fonts:
+        - asset: assets/fonts/ShadowsIntoLight-Regular.ttf
+    - family: SingleDay
+      fonts:
+        - asset: assets/fonts/SingleDay-Regular.ttf
+    - family: SpaceGrotesk
+      fonts:
+        - asset: assets/fonts/SpaceGrotesk-VariableFont_wght.ttf
+
+flutter_native_splash:
+  color: "#fdcc48"
+  color_dark: "#282828"
+
+  image: assets/schoolmate_eagle_splash_screen.png
+
+  branding: assets/loading_light.png
+  branding_dark: assets/loading_dark.png
+
+  android_12:
+    color: "#ffffff"
+    color_dark: "#282828"
+    
+    image: assets/schoolmate_eagle_splash_screen.png
+    icon_background_color: "#ffffff"
+  
+  android_gravity: center
+  web_image_mode: center
+  
+  ios: false
+
+flutter_launcher_icons:
+  image_path_android: "assets/schoolmate_eagle_splash_screen.png"
+  image_path_ios: "assets/schoolmate_eagle_splash_screen.png"
+  android: true
+  ios: false
+  image_path: "assets/schoolmate_eagle.png"
+  min_sdk_android: 19
+
+  web:
+    generate: true
+    image_path: "assets/schoolmate_eagle_splash_screen.png"
+    background_color: "#ffffff"
+    theme_color: "#ffffff"
+  
+  windows:
+    generate: true
+    image_path: "assets/schoolmate_eagle_splash_screen.png"
+    icon_size: 256
+
+  linux:
+    generate: true
+    image_path: "assets/schoolmate_eagle_splash_screen.png"
+  
+  macos:
+    generate: false
+    image_path: "assets/schoolmate_eagle_splash_screen.png"
+  
+
+  

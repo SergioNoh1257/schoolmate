@@ -1,0 +1,3 @@
+# schoolmate
+
+A simple assistant
