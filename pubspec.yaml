@@ -1,7 +1,7 @@
 name: schoolmate
 description: A simple assistant to help you
 publish_to: 'none'
-version: 1.3.0+0
+version: 1.3.1+0
 
 environment:
   sdk: '>=3.2.0 <4.0.0'
@@ -58,6 +58,7 @@ dependencies:
   syncfusion_flutter_pdf: ^24.1.45
   dio: ^5.4.0
   path_provider: ^2.1.2
+  audioplayers: ^5.2.1
 
 #Overrides
 dependency_overrides:
@@ -100,7 +101,7 @@ flutter_native_splash:
   color: "#fdcc48"
   color_dark: "#282828"
 
-  image: assets/schoolmate_eagle_splash_screen.png
+  image: assets/schoolmate_eagle.png
 
   branding: assets/loading_light.png
   branding_dark: assets/loading_dark.png
@@ -109,13 +110,11 @@ flutter_native_splash:
     color: "#ffffff"
     color_dark: "#282828"
     
-    image: assets/schoolmate_eagle_splash_screen.png
+    image: assets/schoolmate_eagle.png
     icon_background_color: "#ffffff"
   
   android_gravity: center
   web_image_mode: center
-  
-  ios: false
 
 flutter_launcher_icons:
   image_path_android: "assets/schoolmate_eagle_splash_screen.png"
@@ -141,7 +140,7 @@ flutter_launcher_icons:
     image_path: "assets/schoolmate_eagle_splash_screen.png"
   
   macos:
-    generate: false
+    generate: true
     image_path: "assets/schoolmate_eagle_splash_screen.png"
   
 
