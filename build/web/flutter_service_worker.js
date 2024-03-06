@@ -22,7 +22,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "c38367a5a0e0723d0786afa2bf1b8a28
 "assets/assets/sounds/error.mp3": "5d1a82c02feb4da50310329aeba6dbd2",
 "assets/assets/sounds/notify.mp3": "2a6f756b36fb4b22eaa75efc714ee651",
 "assets/FontManifest.json": "9a4a6a6b86ff45afd16c72fa114d38bd",
-"assets/fonts/MaterialIcons-Regular.otf": "3d1b8caf1be853a4d2024805b08693e5",
+"assets/fonts/MaterialIcons-Regular.otf": "97fe3847891b1e64957243b648301920",
 "assets/NOTICES": "2afb8f417d11ee3cf5213a31e31af958",
 "assets/packages/awesome_notifications/test/assets/images/test_image.png": "c27a71ab4008c83eba9b554775aa12ca",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "89ed8f4e49bcdfc0b5bfc9b24591e347",
@@ -53,9 +53,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "c38367a5a0e0723d0786afa2bf1b8a28
 "icons/Icon-512.png": "93fd053bd9b669c7898f9706030b9322",
 "icons/Icon-maskable-192.png": "c045c1378ed4839e67341a29db41d539",
 "icons/Icon-maskable-512.png": "93fd053bd9b669c7898f9706030b9322",
-"index.html": "c970cdbf3c9bd826bc3af9a0da6e3647",
-"/": "c970cdbf3c9bd826bc3af9a0da6e3647",
-"main.dart.js": "f2d471141b66e9427705d2b54eafb4c5",
+"index.html": "08589148931cf432edbb93f8ee40c76d",
+"/": "08589148931cf432edbb93f8ee40c76d",
+"main.dart.js": "56e5f8af50ac07c40a3eed97ca37b6a9",
 "manifest.json": "f4d2d78a69782464a34a407e55d3216d",
 "splash/img/branding-1x.png": "e200c45b6c5a9ba922ac60e0f4478954",
 "splash/img/branding-2x.png": "c4cf7ceecfc3894d5d45dbe62f93a3fc",
@@ -73,7 +73,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "c38367a5a0e0723d0786afa2bf1b8a28
 "splash/img/light-2x.png": "8a97de8be4706eeb3419208994fc8374",
 "splash/img/light-3x.png": "a504e7043d182efbf0969bd8573b4739",
 "splash/img/light-4x.png": "161f7c3966c9886994fdb3f00fbc0e07",
-"version.json": "e97c8d7b4eccd249768997e7be10bdf1"};
+"version.json": "ac8a71f5f76608c50733382e7487b068"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
