@@ -137,6 +137,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  bottom_bar_with_sheet:
+    dependency: "direct main"
+    description:
+      name: bottom_bar_with_sheet
+      sha256: c9a43e90cb6886d1e012be661693a8b847d1b1879c81176b74d72a29eb4bf644
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.4.0"
   characters:
     dependency: transitive
     description:
@@ -170,7 +178,7 @@ packages:
     source: hosted
     version: "1.1.1"
   collection:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: collection
       sha256: ee67cb0715911d28db6bf4af1026078bd6f0128b07a5f66fb2ed94ec6783c09a
@@ -325,10 +333,10 @@ packages:
     dependency: "direct main"
     description:
       name: file_picker
-      sha256: caa6bc229eab3e32eb2f37b53a5f9d22a6981474afd210c512a7546c1e1a04f6
+      sha256: "1bbf65dd997458a08b531042ec3794112a6c39c07c37ff22113d2e7e4f81d4e4"
       url: "https://pub.dev"
     source: hosted
-    version: "6.2.0"
+    version: "6.2.1"
   file_selector_linux:
     dependency: transitive
     description:
@@ -480,14 +488,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "13.2.1"
-  google_generative_ai:
-    dependency: "direct main"
-    description:
-      name: google_generative_ai
-      sha256: b2d3f7277a85e3e6be4c4392c59e73ea211b5b6c8bb21c24c71fd411a2d1822e
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.2.2"
   gotrue:
     dependency: transitive
     description:
@@ -712,6 +712,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.8.0"
+  material_table_view:
+    dependency: "direct main"
+    description:
+      name: material_table_view
+      sha256: e648bbfbef20f72c84ec128419c7fc9de59deea6221043ee26b89cac2acdeec6
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.0.2"
   media_kit:
     dependency: "direct main"
     description:
@@ -1052,10 +1060,10 @@ packages:
     dependency: "direct main"
     description:
       name: shared_preferences
-      sha256: "0344316c947ffeb3a529eac929e1978fcd37c26be4e8468628bac399365a3ca1"
+      sha256: "81429e4481e1ccfb51ede496e916348668fd0921627779233bd24cc3ff6abd02"
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.0"
+    version: "2.2.2"
   shared_preferences_android:
     dependency: transitive
     description:
@@ -1104,6 +1112,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.2"
+  signature_kit:
+    dependency: "direct main"
+    description:
+      name: signature_kit
+      sha256: c5ee121985472b64643f87a78abfa4a3937b4bf3e488b5898affde4e041f12d2
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.1"
   sky_engine:
     dependency: transitive
     description: flutter
