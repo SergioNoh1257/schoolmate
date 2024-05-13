@@ -71,8 +71,6 @@ dependencies:
   material_table_view: ^4.0.2
   signature_kit: ^1.0.1
   diacritic: ^0.1.5
-  mime: ^1.0.5
-  animations: ^2.0.11
 
 dev_dependencies:
   flutter_test:
