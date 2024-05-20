@@ -1,5 +1,5 @@
 name: schoolmate
-description: A simple assistant to help you
+description: Un asistente para ayudarte
 publish_to: 'none'
 version: 1.6.1+1
 
@@ -62,7 +62,6 @@ dependencies:
   easy_rich_text: ^2.1.0
   rich_text_controller: ^1.4.2
   # google_generative_ai: ^0.2.0
-  marquee: ^2.2.3
   # animated_list_plus: ^0.5.2
   either_dart: ^1.0.0
   infinite_carousel: ^1.1.1
@@ -73,6 +72,7 @@ dependencies:
   diacritic: ^0.1.5
   animations: ^2.0.11
   mime: ^1.0.5
+  flutter_typeahead: ^5.2.0
 
 dev_dependencies:
   flutter_test:
@@ -164,6 +164,4 @@ flutter_launcher_icons:
   macos:
     generate: true
     image_path: "assets/schoolmate_eagle_splash_screen.png"
-  
-
   
