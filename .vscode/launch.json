@@ -5,6 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Flutter Web Profile",
+            "type": "dart",
+            "request": "launch",
+            "flutterMode": "profile",
+            "args": ["-d", "chrome"]
+        },
+        
+        
+        {
             "name": "schoolmate",
             "request": "launch",
             "type": "dart"
